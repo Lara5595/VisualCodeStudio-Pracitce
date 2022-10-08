@@ -177,3 +177,99 @@ const introducer = (name, shirt) => {
 }
 
 console.log(introducer('David', 'black'))
+
+
+
+///////////////////////////////For Loops////////////////////////
+
+fruits = ['banana', 'apple', 'orange', 'pear']
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+
+// for(let i=0; i< fruits.length; i++) {
+//     console.log(i,fruits[i])
+// }
+ 
+// new way to loop
+// for (const fruit of fruits) {
+//     console.log(fruit);
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6]
+
+
+// loop old way
+// for(let i =0; i<numbers.length; i++){
+//     console.log(numbers[i])
+// }
+
+// new way
+// for (const number of numbers) {
+//     console.log(number)
+// }
+
+// console.log("we use the number array and double it and push it to a new array")
+
+// for (const number of numbers) {
+//    result.push(number * 2)
+// }
+
+// console.log(result);
+
+
+
+// new way
+
+// const double = (numbers) => {
+//     let result = []
+//     for (const number of numbers) {
+//         result.push(number * 2)
+//     }
+//     return result
+// }
+
+// console.log(double([1, 2, 3, 4, 5, 6]))
+
+
+// // this squares 
+// const squarenum = (numbers) => {
+//     let result = []
+//     for (const number of numbers) {
+//         result.push(number ** 2)
+//     }
+//     return result
+// }
+
+// console.log(squarenum([1, 2, 3, 4, 5, 6]))
+
+
+// old way
+
+let numbers = [1, 2, 3, 4, 5, 6]
+
+function double(num) {
+    for (let i = 0; i < num.length; i++) {
+        if (num * 2) {
+            double(num)
+        }
+        console.log(double(num));
+    }
+}
+
+
+// var numbers = [8, 12, 5, 2, 5, 7];
+// var doubledNumbers = [];
+
+
+// function doubled(arr){
+//  var doubledNumbers = [];
+//  for (var i = 0; i < arr.length; i ++){
+//   var dub = arr[i];
+//    var dubb = dub*2;
+//    doubledNumbers.push(dubb);
+//  }
+//  return doubledNumbers;
+
+// }
