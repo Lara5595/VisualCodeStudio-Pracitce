@@ -245,31 +245,15 @@ fruits = ['banana', 'apple', 'orange', 'pear']
 // console.log(squarenum([1, 2, 3, 4, 5, 6]))
 
 
-// old way
 
-let numbers = [1, 2, 3, 4, 5, 6]
+// I want to double numbers with a for loop
+// Need to continue with for loops 
+// saved on oct 9 2022
 
-function double(num) {
-    for (let i = 0; i < num.length; i++) {
-        if (num * 2) {
-            double(num)
-        }
-        console.log(double(num));
-    }
+numbers2 = [2, 4, 6 ,8, 10, 12, 14]
+
+for(let i = 0; i < numbers2.length; i++) {
+    // console.log(numbers2[i]);
+    return numbers2 * 2
 }
-
-
-// var numbers = [8, 12, 5, 2, 5, 7];
-// var doubledNumbers = [];
-
-
-// function doubled(arr){
-//  var doubledNumbers = [];
-//  for (var i = 0; i < arr.length; i ++){
-//   var dub = arr[i];
-//    var dubb = dub*2;
-//    doubledNumbers.push(dubb);
-//  }
-//  return doubledNumbers;
-
-// }
+console.log(numbers2[i])
