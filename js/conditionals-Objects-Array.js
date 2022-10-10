@@ -245,8 +245,22 @@ fruits = ['banana', 'apple', 'orange', 'pear']
 // console.log(squarenum([1, 2, 3, 4, 5, 6]))
 
 
-// MORE ON For Loops that i got from a video of MoshCoder
+// MORE ON For Loops that i got from a video of MoshCoder and other codetubers
 // for (Inital expression, conditon, increament expression)
+
+// This loops hello world 5 times
 for (let i = 0; i < 5; i++) {
-    console.log("hello world");
+    console.log(i, 'hello world');
+}
+
+// this display the odd numbers
+for (let i = 1; i <= 5; i++) {
+    if (i%2 !==0)
+    console.log(i)
+}
+
+// this display the odd number but decremation
+for (let i = 5; i >= 1; i--) {
+    if (i%2 !==0)
+    console.log('I am decrementing', i)
 }
