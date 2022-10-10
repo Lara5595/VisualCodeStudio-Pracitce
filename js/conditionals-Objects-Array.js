@@ -245,7 +245,7 @@ fruits = ['banana', 'apple', 'orange', 'pear']
 // console.log(squarenum([1, 2, 3, 4, 5, 6]))
 
 
-// MORE ON For Loops that i got from a video of MoshCoder and other codetubers
+// MORE ON For Loops that i got from a video of MoshCoder 
 // for (Inital expression, conditon, increament expression)
 
 // This loops hello world 5 times
@@ -256,7 +256,7 @@ for (let i = 0; i < 5; i++) {
 // this display the odd numbers
 for (let i = 1; i <= 5; i++) {
     if (i%2 !==0)
-    console.log(i)
+    console.log("I am console loggin odd numbers", i)
 }
 
 // this display the odd number but decremation
@@ -264,3 +264,46 @@ for (let i = 5; i >= 1; i--) {
     if (i%2 !==0)
     console.log('I am decrementing', i)
 }
+
+// FOR LOOPS BEAU - youtuber teaches JS
+
+var ourArray = [];
+for (let i =0; i<5; i++) {
+    ourArray.push(i)
+}
+console.log(ourArray);
+
+// using a break statement
+var ourArray = [];
+for (let i =0; i<5; i++) {
+    if(i > 2) break;
+    ourArray.push(i)
+}
+console.log("I am using a break statment",ourArray);
+
+// looping through a existing array
+let arr = [10,9,8,7,6];
+for (let i = 0; i < arr.length; i++){
+    console.log("I am looping through the array" ,arr[i])
+}
+
+// Nested for loops
+
+// let arr2 = [ [1,2], [3,4], [5,6] ];
+
+// for (let i = 0; i < arr2.length; i++) {
+//  for (let j = 0; j < arr2[i].length; j++) {
+//   console.log(arr[i][j]);
+// }
+// }
+
+let array = [ 
+    [1,2],
+    [3,4],
+    [5,6] ];
+
+    for(let i = 0; i < array.length; i++) {
+        for(let j = 0; j < array[i].length; j++) {
+            console.log(array[i][j]);
+        }
+    }
