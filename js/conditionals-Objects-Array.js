@@ -288,15 +288,6 @@ for (let i = 0; i < arr.length; i++){
 }
 
 // Nested for loops
-
-// let arr2 = [ [1,2], [3,4], [5,6] ];
-
-// for (let i = 0; i < arr2.length; i++) {
-//  for (let j = 0; j < arr2[i].length; j++) {
-//   console.log(arr[i][j]);
-// }
-// }
-
 let array = [ 
     [1,2],
     [3,4],
@@ -307,3 +298,9 @@ let array = [
             console.log(array[i][j]);
         }
     }
+
+    // more on loops with conditonals
+    function name(num1,num2) {
+        return num1 + num2;
+    }
+    console.log(name('I am adding ',30,30));
