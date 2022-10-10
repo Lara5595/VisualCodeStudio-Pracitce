@@ -250,10 +250,10 @@ fruits = ['banana', 'apple', 'orange', 'pear']
 // Need to continue with for loops 
 // saved on oct 9 2022
 
-numbers2 = [2, 4, 6 ,8, 10, 12, 14]
+// numbers2 = [2, 4, 6 ,8, 10, 12, 14]
 
-for(let i = 0; i < numbers2.length; i++) {
-    // console.log(numbers2[i]);
-    return numbers2 * 2
-}
-console.log(numbers2[i])
+// for(let i = 0; i < numbers2.length; i++) {
+//     // console.log(numbers2[i]);
+//     return numbers2 * 2
+// }
+// console.log(numbers2[i])
