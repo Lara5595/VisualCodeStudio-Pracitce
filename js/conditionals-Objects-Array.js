@@ -222,15 +222,15 @@ fruits = ['banana', 'apple', 'orange', 'pear']
 
 // new way
 
-// const double = (numbers) => {
-//     let result = []
-//     for (const number of numbers) {
-//         result.push(number * 2)
-//     }
-//     return result
-// }
+const double = (numbers) => {
+    let result = []
+    for (const number of numbers) {
+        result.push(number * 2)
+    }
+    return result
+}
 
-// console.log(double([1, 2, 3, 4, 5, 6]))
+console.log(double([1, 2, 3, 4, 5, 6]))
 
 
 // // this squares 
@@ -299,8 +299,22 @@ let array = [
         }
     }
 
-    // more on loops with conditonals
-    function name(num1,num2) {
-        return num1 + num2;
+  
+    // const double = (numbers) => {
+    //     let result = []
+    //     for (const number of numbers) {
+    //         result.push(number * 2)
+    //     }
+    //     return result
+    // }
+    
+    // console.log(double([1, 2, 3, 4, 5, 6]))
+
+    let forTest = [3, 2, 5, 8, 10];
+
+    function forDouble (numbers) {
+        let newArr = []
+        for (let i = 0; i < numbers.length; i++){
+            newArr.push(numbers[i] * 2)
+        } return newArr
     }
-    console.log(name('I am adding ',30,30));
