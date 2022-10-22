@@ -1,21 +1,12 @@
 
-// const howManyLetters = () => {
-//     const phrase = 'hey, can you go to grocery store with me?'
 
-//     for(letter in phrase) {
-//         console.log(letter);
-//     }
-// }
-// console.log(howManyLetters)
+const howManyLetters = () => {
+    const phrase = "hey, can you go grocery store with me?"
 
-function howManyLetter(letter) {
-    let phrase = 'hey, can you go to grocery store with me?'
-  
-    for (let i = 0; i < phrase.length; i++) {
-        console.log(howManyLetter);
-
+    for (letter in phrase) {
+        console.log(letter);
     }
-  }
-  console.log(howManyLetter);
 
+}
 
+console.log(howManyLetters());

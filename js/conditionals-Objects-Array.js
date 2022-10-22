@@ -310,6 +310,9 @@ let array = [
     
     // console.log(double([1, 2, 3, 4, 5, 6]))
 
+
+
+    // this is the same as the one above^^
     let forTest = [3, 2, 5, 8, 10];
 
     function forDouble (numbers) {
