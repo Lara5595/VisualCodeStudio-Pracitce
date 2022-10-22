@@ -33,12 +33,41 @@
 // const phrase = prompt('Write your phrase');
 // console.log(howManyLetters(phrase));
 
+
+
+
 // Using .length to count the letters 
+// const howManyLetters = (phrase) => {
+//     return { result: phrase.length }
+// }
 
-const howManyLetters = (phrase) => {
-    return { result: phrase.length }
+// const phrase = prompt( "Write your phase")
+
+// console.log(howManyLetters(phrase))
+
+
+// const sumArray = (numbers) => {
+//     let result = 0;
+//     // for loop
+//  for (const number of numbers) {
+//     console.log(number) 
+//    result = result + number
+//  }
+//     return { result }
+// }
+
+// const nums = [1, 2, 3, 4, 5]
+// console.log(sumArray(nums));
+
+
+const nums = [1, 2, 3, 4, 5]
+
+function sumArray (numbers) {
+    let result = 0;
+
+    for(let i = 0; i < numbers.length; i++) {
+        result = result + numbers[i]
+    }
+    return {result}
 }
-
-const phrase = prompt( "Write your phase")
-
-console.log(howManyLetters(phrase))
+console.log(sumArray(nums));
