@@ -60,14 +60,28 @@
 // console.log(sumArray(nums));
 
 
-const nums = [1, 2, 3, 4, 5]
+// This is a regular for loop
+// const nums = [1, 2, 3, 4, 5]
 
-function sumArray (numbers) {
-    let result = 0;
+// function sumArray (numbers) {
+//     let result = 0;
 
-    for(let i = 0; i < numbers.length; i++) {
-        result = result + numbers[i]
+//     for(let i = 0; i < numbers.length; i++) {
+//         result = result + numbers[i]
+//     }
+//     return {result}
+// }
+// console.log(sumArray(nums));
+
+
+const max = (numero) => {
+    let result = numero[0]; // results is the first item of array
+    //loop
+    for (const high of numero) {
+        if(high > result) {
+            result = high
+        }
     }
-    return {result}
+    return { result };
 }
-console.log(sumArray(nums));
+console.log(max([1, 2, 3, 4, 5, 1, 3, 7, 9, 2]))
