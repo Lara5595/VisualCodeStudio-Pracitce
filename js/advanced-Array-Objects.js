@@ -88,22 +88,43 @@ const max = (numero) => {
 console.log(max([1, 2, 3, 4, 5, 1, 3, 7, 9, 2]))
 
 
-const letterFrequency = (phrase) => {
-    // letterFrequency("haha") should log {'h' : 2  'a' : 2}
-    console.log(phrase)
-    // Make a frequency object {}
-    let frequency = [];
-    for (const letter of phrase) {
-    // check if letter exist in frequency
-    if (letter in frequency) {
-        // if it exist increment value by 1
-        frequency[letter] = frequency[letter] + 1
-      // Otherwise, set value to 1
-    }  else{
-        frequency[letter] = 1
-    }
-    }
-       return frequency;
-}
 
-console.log(letterFrequency("lol, what are you doing later tonight lol, haha!"));
+// This counts the letter in a phrase
+// const letterFrequency = (phrase) => {
+//     // letterFrequency("haha") should log {'h' : 2  'a' : 2}
+//     console.log(phrase)
+//     // Make a frequency object {}
+//     let frequency = [];
+//     for (const letter of phrase) {
+//     // check if letter exist in frequency
+//     if (letter in frequency) {
+//         // if it exist increment value by 1
+//         frequency[letter] = frequency[letter] + 1
+//       // Otherwise, set value to 1
+//     }  else{
+//         frequency[letter] = 1
+//     }
+//     }
+//        return frequency;
+// }
+
+// console.log(letterFrequency("lol, what are you doing later tonight lol, haha!"));
+
+
+
+// Word Frequency('lol what lol) => {'lol : 2 what : 1}
+const wordFrequency = (phrase) => {
+    let frequency2 = {};
+      words = phrase.split(' ') // This splits the words
+
+    for (const word of words) {
+        console.log(word)
+        if(word in frequency2) {
+            frequency2[word] += 1
+        } else {
+            frequency2[word] = 1
+        }
+    }
+    return frequency2
+}
+console.log(wordFrequency("lol what lol"))
