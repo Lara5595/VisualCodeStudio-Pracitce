@@ -20,7 +20,13 @@
 
 // console.log(doubleMap([1, 2, 3]));
 
-function doubleMap(numbers) {
-    return numbers * 2
-}
 
+arr = [1, 2, 3, 4];
+
+function doubleNums(nums) {
+    for(let i = 0; i < nums.lenght; i * 2){
+        return nums[i];
+    }
+    return doubleNums[i];
+}
+console.log(doubleNums(arr));
