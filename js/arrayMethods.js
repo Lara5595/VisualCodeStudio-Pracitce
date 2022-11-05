@@ -20,13 +20,26 @@
 
 // console.log(doubleMap([1, 2, 3]));
 
+const arr = [1,2];
 
-arr = [1, 2, 3, 4];
-
-function doubleNums(nums) {
-    for(let i = 0; i < nums.lenght; i * 2){
-        return nums[i];
+function doublea(num){
+    const doublearr = [];
+    for(let i = 0; i < num.length; i++){
+            doublearr.push(num[i] * 2);
     }
-    return doubleNums[i];
+        return doublearr;
 }
-console.log(doubleNums(arr));
+
+console.log(doublea(arr));
+
+
+function double(arr) {
+    const doublearr = [];
+    for(let i = 0; i < arr.length; i++) {
+        doublearr.push(arr[i] * 2);
+    }
+
+    return doublearr;
+}
+
+console.log(double(arr));
