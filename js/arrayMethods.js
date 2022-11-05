@@ -78,3 +78,19 @@ let names = actors.map(actor => actor.name);
 
 console.log(names);
 
+
+// Using reduce
+
+// sum all of the net worths
+// SUM: Think reduce
+// reduce takes in a function as an argument
+// reduce loops and gives you back the accumulator
+
+let sumof = [1, 2, 3];
+const result = sumof.reduce(function(prev, curr){
+
+    return prev + curr
+})
+
+console.log(result);
+
