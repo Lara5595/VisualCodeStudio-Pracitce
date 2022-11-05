@@ -51,6 +51,22 @@ const filter = (numbers, greaterThan) => {
     }
     return result;
 }
-// 
+
+// using .filter
 const nums = [1, 2, 3, 4, 5, 6]
-console.log(nums.filter(num => num >= 3));
+// console.log(nums.filter(num => num >= 3));
+
+// using or and and || &&
+console.log(nums.filter(num => num >= 4 || num < 2));
+
+
+const actors = [
+    {name: 'johnny', networth: 2000000},
+    {name: 'amber', networth: 10},
+    {name: 'leonard', networth: 1000000},
+]
+
+console.log(actors.filter(actor => actor.networth > 10));
+
+
+
