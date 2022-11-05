@@ -60,6 +60,7 @@ const nums = [1, 2, 3, 4, 5, 6]
 console.log(nums.filter(num => num >= 4 || num < 2));
 
 
+// filtering through an array of objects
 const actors = [
     {name: 'johnny', networth: 2000000},
     {name: 'amber', networth: 10},
@@ -69,4 +70,11 @@ const actors = [
 console.log(actors.filter(actor => actor.networth > 10));
 
 
+// arrayMethods.innerHTML = '<h1>"Hello"</h1>'
+
+
+// using map to just get the name
+let names = actors.map(actor => actor.name);
+
+console.log(names);
 
