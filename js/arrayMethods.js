@@ -80,12 +80,6 @@ console.log(names);
 
 
 // Using reduce
-
-// sum all of the net worths
-// SUM: Think reduce
-// reduce takes in a function as an argument
-// reduce loops and gives you back the accumulator
-
 let sumof = [1, 2, 3];
 const result = sumof.reduce(function(prev, curr){
 
@@ -93,4 +87,13 @@ const result = sumof.reduce(function(prev, curr){
 })
 
 console.log(result);
+
+// sum all of the net worths
+// SUM: Think reduce
+// reduce takes in a function as an argument
+// reduce loops and gives you back the accumulator
+
+// This adds the networth of actors
+console.log("The networth combine of all the actors is " + actors.reduce((a,b) => a + b.networth, 0));
+
 
