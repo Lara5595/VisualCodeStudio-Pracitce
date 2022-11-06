@@ -84,3 +84,18 @@ function clearScores() {
 // We are getting the button id
 const ClearGameBtn = document.getElementById('clear-Game')
 ClearGameBtn.onclick = () => clearScores();
+
+
+
+// Using JQuery instead of vanilla Js
+// This is the counter
+let count = 0;
+
+$("#khaki").click(function() {
+    count ++
+    $(".colorSquare2").html(+count);
+});
+
+$("#clear").click(function(){
+    $(".colorSquare2").html("");
+})

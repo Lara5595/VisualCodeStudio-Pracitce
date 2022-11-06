@@ -2,3 +2,29 @@ body{
     background-color: black;
     color: white;
 }
+
+#containersquare{
+display: flex;
+justify-content: center;    
+}
+
+.colorSquare2 {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: khaki    
+}
+
+#container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#clear {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
