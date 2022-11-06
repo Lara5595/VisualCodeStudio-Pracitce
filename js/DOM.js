@@ -16,4 +16,29 @@ title.innerText = message;
 title.innerHTML = '<p>Hello</p>'
 
 // replace the word hello with the message variable using template literals
+// We use template literals to use the var message that has goodbye my lover
 title.innerHTML = `<p>${message}</p>`
+
+
+// We are changing the color of the text
+title.style.color = "white";
+// Background color is diffrent from css you cant use dashes - like in css
+title.style.backgroundColor = "red";
+
+
+
+// Mini exercise
+let redDiv = document.getElementById("red");
+let yellowDiv = document.getElementById("yellow");
+let greenDiv = document.getElementById("green");
+
+// This is the newer way to write functions
+redDiv.onclick = () => console.log('you clicked red');
+yellowDiv.onclick = () => console.log('you click yellow')
+greenDiv.onclick = () => console.log('you click green')
+
+
+// old way i used alert just to test it instead of console log
+// redDiv.onclick = function() {
+//     alert('red');
+// }
