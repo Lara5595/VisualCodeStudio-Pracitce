@@ -42,3 +42,18 @@ greenDiv.onclick = () => console.log('you click green')
 // redDiv.onclick = function() {
 //     alert('red');
 // }
+
+
+// Looping
+// This selects all the squares with a class of colorSquare
+const squares = document.querySelectorAll(".colorSquare")
+console.log(squares);
+// Instead of repeating this we can do a for loop
+// console.log(squares[0].value)
+// console.log(squares[1].value)
+// console.log(squares[2].value)
+
+// forEach
+squares.forEach(square => {
+square.onclick = () => console.log(square.value)
+})
