@@ -54,6 +54,33 @@ console.log(squares);
 // console.log(squares[2].value)
 
 // forEach
+// This is a easier way for when the user clicks the square it console logs
+
+// We are creating a timesclicked for when we click the squares
+const timesclicked = {'red' : 0, 'yellow' : 0, 'green' : 0}
 squares.forEach(square => {
-square.onclick = () => console.log(square.value)
+square.onclick = () => {
+    console.log(square.value)
+    // every time the square gets clicked it grabs the value(color) and increments
+    timesclicked[square.value] += 1
+    // This creates a number inside the square
+    square.innerText = timesclicked[square.value];
+}
 })
+
+// This clears the score
+
+function clearScores() {
+    timesclicked.red = 0
+    timesclicked.yellow = 0
+    timesclicked.green = 0
+
+    squares.forEach(square =>{
+        square.innerText = ''
+    })
+}
+
+
+// We are getting the button id
+const ClearGameBtn = document.getElementById('clear-Game')
+ClearGameBtn.onclick = () => clearScores();
