@@ -98,4 +98,5 @@ $("#khaki").click(function() {
 
 $("#clear").click(function(){
     $(".colorSquare2").html("");
+    count = 0;
 })
